@@ -2,17 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marias Paul | Portfolio</title>
     
-        <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧛‍♂️</text></svg>">
-
-
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧛‍♂️</text></svg>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
-
 </head>
-<body class="container-fluid" >
+<body>
     <!-- Header & Navigation -->
     <header>
         <div class="container">
@@ -26,9 +23,15 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 
-                <button class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
+                <div class="nav-right">
+                    <button class="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                    </button>
+                    <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
             </nav>
         </div>
     </header>
@@ -41,10 +44,13 @@
                     <h1>Hi, I'm <span class="highlight">Marias Paul</span></h1>
                     <h2>Fullstack Web Developer</h2>
                     <p>I create beautiful, responsive websites using HTML, CSS, and JavaScript. Passionate about clean code and user-friendly designs.</p>
-                    <a href="#projects" class="btn">View My Work</a>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn">View My Work</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
                 </div>
                 <div class="hero-image">
-                    <img src="pic1.jpeg" alt="John Doe">
+                    <img src="pic1.jpeg" alt="Marias Paul" loading="lazy">
                 </div>
             </div>
         </div>
@@ -66,6 +72,8 @@
                         <span class="skill">CSS3</span>
                         <span class="skill">Python</span>
                         <span class="skill">JavaScript</span>
+                        <span class="skill">React</span>
+                        <span class="skill">Node.js</span>
                         <span class="skill">Responsive Design</span>
                         <span class="skill">UI/UX Design</span>
                         <span class="skill">Git & GitHub</span>
@@ -74,7 +82,7 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Working on laptop">
+                    <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Working on laptop" loading="lazy">
                 </div>
             </div>
         </div>
@@ -88,7 +96,7 @@
                 <!-- Project 1 -->
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="E-commerce Website">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80" alt="E-commerce Website" loading="lazy">
                     </div>
                     <div class="project-info">
                         <h3>E-commerce Website</h3>
@@ -97,7 +105,7 @@
                             <span class="project-tag">HTML</span>
                             <span class="project-tag">CSS</span>
                             <span class="project-tag">JavaScript</span>
-                            <span class="project-tag">Responsive</span>
+                            <span class="project-tag">React</span>
                         </div>
                         <a href="#" class="btn">View Project</a>
                     </div>
@@ -106,7 +114,7 @@
                 <!-- Project 2 -->
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Travel Blog">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Travel Blog" loading="lazy">
                     </div>
                     <div class="project-info">
                         <h3>Travel Blog</h3>
@@ -114,8 +122,8 @@
                         <div class="project-tags">
                             <span class="project-tag">HTML</span>
                             <span class="project-tag">CSS</span>
-                            <span class="project-tag">Flexbox</span>
-                            <span class="project-tag">Grid</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Node.js</span>
                         </div>
                         <a href="#" class="btn">View Project</a>
                     </div>
@@ -124,7 +132,7 @@
                 <!-- Project 3 -->
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Task Management App">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Task Management App" loading="lazy">
                     </div>
                     <div class="project-info">
                         <h3>Task Management App</h3>
@@ -133,7 +141,7 @@
                             <span class="project-tag">HTML</span>
                             <span class="project-tag">CSS</span>
                             <span class="project-tag">JavaScript</span>
-                            <span class="project-tag">Local Storage</span>
+                            <span class="project-tag">Python</span>
                         </div>
                         <a href="#" class="btn">View Project</a>
                     </div>
@@ -158,17 +166,17 @@
                             </div>
                             <div>
                                 <h3>Email</h3>
-                                <p>paultin844@gmail.com</p>
+                                <a href="mailto:paultin844@gmail.com">paultin844@gmail.com</a>
                             </div>
                         </div>
                         
                         <div class="contact-item">
-                            <div class="contact-icon" >
-                                <i class="fas fa-phone" href="tel:+254742026270"></i>
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
                             </div>
                             <div>
                                 <h3>Phone</h3>
-                                <p>+254 742 026 270</p>
+                                <a href="tel:+254742026270">+254 742 026 270</a>
                             </div>
                         </div>
                         
@@ -186,10 +194,18 @@
                 
                 <div class="contact-form">
                     <form id="contactForm">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <input type="text" placeholder="Subject" required>
-                        <textarea placeholder="Your Message" required></textarea>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
                         <button type="submit" class="btn">Send Message</button>
                     </form>
                 </div>
@@ -201,14 +217,14 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <a href="#" class="logo" style="color: white;">Port<span style="color: var(--accent-color);">folio</span></a>
+                <a href="#" class="logo">Port<span>folio</span></a>
                 <p>Building beautiful, responsive websites with clean code.</p>
                 
                 <div class="social-links">
-                    <a href="https://github.com/Tint24y"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/peshdee"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://facebook.com/moments mastery"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-codepen"></i></a>
+                    <a href="https://github.com/Tint24y" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/peshdee" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="CodePen"><i class="fab fa-codepen"></i></a>
                 </div>
                 
                 <div class="copyright">
