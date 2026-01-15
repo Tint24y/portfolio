@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧛‍♂️</text></svg>">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     <!-- Header & Navigation -->
@@ -195,18 +196,28 @@
                 <div class="contact-form">
                     <form id="contactForm">
                         <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <div class="error-message" id="nameError"></div>
                         </div>
                         <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <div class="error-message" id="emailError"></div>
                         </div>
                         <div class="form-group">
-                            <input type="text" placeholder="Subject" required>
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            <div class="error-message" id="subjectError"></div>
                         </div>
                         <div class="form-group">
-                            <textarea placeholder="Your Message" required></textarea>
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                            <div class="error-message" id="messageError"></div>
                         </div>
-                        <button type="submit" class="btn">Send Message</button>
+                        <div id="formMessage" class="form-message"></div>
+                        <button type="submit" class="btn" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </span>
+                        </button>
                     </form>
                 </div>
             </div>
@@ -223,7 +234,7 @@
                 <div class="social-links">
                     <a href="https://github.com/Tint24y" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     <a href="https://linkedin.com/in/peshdee" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                     <a href="#" aria-label="CodePen"><i class="fab fa-codepen"></i></a>
                 </div>
                 
