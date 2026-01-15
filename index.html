@@ -12,12 +12,16 @@
     <link rel="stylesheet" href="styles.css">
 
 </head>
-<body class="container-fluid" >
+<body>
     <!-- Header & Navigation -->
     <header>
         <div class="container">
             <nav>
                 <a href="#" class="logo">Port<span>folio</span></a>
+                
+                <button class="mobile-menu-btn" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
                 
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
@@ -25,10 +29,6 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                
-                <button class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
             </nav>
         </div>
     </header>
@@ -38,13 +38,17 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Hi, I'm <span class="highlight">Marias Paul</span></h1>
-                    <h2>Fullstack Web Developer</h2>
-                    <p>I create beautiful, responsive websites using HTML, CSS, and JavaScript. Passionate about clean code and user-friendly designs.</p>
+                    <h1>Hi, I'm <span class="highlight">John Doe</span></h1>
+                    <h2>Frontend Web Developer</h2>
+                    <p>I create beautiful, responsive websites that work perfectly on all devices. Passionate about clean code and user-friendly designs.</p>
                     <a href="#projects" class="btn">View My Work</a>
                 </div>
                 <div class="hero-image">
-                    <img src="pic1.jpeg" alt="John Doe">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                         alt="John Doe - Web Developer" 
+                         width="400" 
+                         height="400"
+                         loading="lazy">
                 </div>
             </div>
         </div>
@@ -57,24 +61,28 @@
             <div class="about-content">
                 <div class="about-text">
                     <h2>I design and build user interfaces</h2>
-                    <p>I'm a passionate fullstack developer with 3+ years of experience creating responsive websites and web applications. My focus is on writing clean, efficient code and creating intuitive user experiences.</p>
-                    <p>I'm constantly learning and staying up-to-date with the latest web technologies and best practices. When I'm not coding, you can find me hiking, reading tech blogs, or experimenting with new design tools.</p>
+                    <p>I'm a passionate frontend developer with 3+ years of experience creating responsive websites and web applications. My focus is on writing clean, efficient code and creating intuitive user experiences.</p>
+                    <p>I'm constantly learning and staying up-to-date with the latest web technologies and best practices.</p>
                     
                     <h3>My Skills</h3>
                     <div class="skills-list">
                         <span class="skill">HTML5</span>
                         <span class="skill">CSS3</span>
-                        <span class="skill">Python</span>
                         <span class="skill">JavaScript</span>
                         <span class="skill">Responsive Design</span>
+                        <span class="skill">Mobile First</span>
                         <span class="skill">UI/UX Design</span>
                         <span class="skill">Git & GitHub</span>
                         <span class="skill">Web Performance</span>
-                        <span class="skill">Cross-browser Compatibility</span>
+                        <span class="skill">Accessibility</span>
                     </div>
                 </div>
                 <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Working on laptop">
+                    <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+                         alt="Working on laptop" 
+                         width="600" 
+                         height="400"
+                         loading="lazy">
                 </div>
             </div>
         </div>
@@ -88,7 +96,11 @@
                 <!-- Project 1 -->
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="E-commerce Website">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+                             alt="E-commerce Website" 
+                             width="600" 
+                             height="300"
+                             loading="lazy">
                     </div>
                     <div class="project-info">
                         <h3>E-commerce Website</h3>
@@ -106,7 +118,11 @@
                 <!-- Project 2 -->
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Travel Blog">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+                             alt="Travel Blog" 
+                             width="600" 
+                             height="300"
+                             loading="lazy">
                     </div>
                     <div class="project-info">
                         <h3>Travel Blog</h3>
@@ -124,7 +140,11 @@
                 <!-- Project 3 -->
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Task Management App">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" 
+                             alt="Task Management App" 
+                             width="600" 
+                             height="300"
+                             loading="lazy">
                     </div>
                     <div class="project-info">
                         <h3>Task Management App</h3>
@@ -158,17 +178,17 @@
                             </div>
                             <div>
                                 <h3>Email</h3>
-                                <p>paultin844@gmail.com</p>
+                                <p>john.doe@example.com</p>
                             </div>
                         </div>
                         
                         <div class="contact-item">
-                            <div class="contact-icon" >
-                                <i class="fas fa-phone" href="tel:+254742026270"></i>
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
                             </div>
                             <div>
                                 <h3>Phone</h3>
-                                <p>+254 742 026 270</p>
+                                <p>+1 (123) 456-7890</p>
                             </div>
                         </div>
                         
@@ -178,7 +198,7 @@
                             </div>
                             <div>
                                 <h3>Location</h3>
-                                <p>Machakos, Machakos Town</p>
+                                <p>San Francisco, California</p>
                             </div>
                         </div>
                     </div>
@@ -186,10 +206,10 @@
                 
                 <div class="contact-form">
                     <form id="contactForm">
-                        <input type="text" placeholder="Your Name" required>
-                        <input type="email" placeholder="Your Email" required>
-                        <input type="text" placeholder="Subject" required>
-                        <textarea placeholder="Your Message" required></textarea>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="message" placeholder="Your Message" required rows="6"></textarea>
                         <button type="submit" class="btn">Send Message</button>
                     </form>
                 </div>
@@ -201,23 +221,25 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <a href="#" class="logo" style="color: white;">Port<span style="color: var(--accent-color);">folio</span></a>
+                <a href="#" class="logo" style="color: white;">Port<span style="color: var(--primary-light);">folio</span></a>
                 <p>Building beautiful, responsive websites with clean code.</p>
                 
                 <div class="social-links">
-                    <a href="https://github.com/Tint24y"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/peshdee"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://facebook.com/moments mastery"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-codepen"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="CodePen"><i class="fab fa-codepen"></i></a>
                 </div>
                 
                 <div class="copyright">
-                    <p>&copy; 2026 Marias Paul. All rights reserved.</p>
+                    <p>&copy; 2023 John Doe. All rights reserved.</p>
+                    <p>Fully responsive design</p>
                 </div>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+
 </body>
 </html>
